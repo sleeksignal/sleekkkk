@@ -1,0 +1,726 @@
+
+
+/* 기존 스타일 */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box; /* 전체 페이지에 박스 크기 계산 적용 */
+    overflow-x: hidden; /* 수평 스크롤바를 제거합니다. */
+}
+
+/* Header styles */
+header {
+    width: 100%;
+    background-color: #E7EFFF;
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    padding: 20px 40px;
+    left: 0px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+header .logo {
+    position: absolute;
+    left: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+header nav a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Container styles */
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    left: 0px;
+}
+
+.image-container {
+    width: 100%;
+    height: 100%;
+    position: relative; 
+    left: 0px;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    left: 0px;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    right: 20px; /* 오른쪽으로 이동 */
+    transform: translateY(-50%);
+    text-align: right; /* 텍스트를 오른쪽 정렬 */
+    color: white;
+    padding: 50px;
+    border-radius: 10px;
+    opacity: 0; /* 애니메이션을 위한 초기값 */
+    animation: fadeIn 2s forwards; /* 페이드인 애니메이션 */
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.text-overlay .title {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.text-overlay .subtitle {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.text-overlay .button {
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center; /* 텍스트를 오른쪽 정렬 */
+}
+
+/* 본문 */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #000;
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+    margin-top: 60px; /* 간격 추가 */
+}
+
+.container .image {
+    width: 100%;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+
+.inner-layout {
+    text-align: center;
+}
+
+.title {
+    font-size: 56px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.subtitle {
+    font-size: 32px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.button {
+    margin-top: 20px;
+    padding: 15px 30px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* 섹션 스타일 */
+.section-content {
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+}
+
+.section-title {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.section-subtitle {
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+/* 인트로 컨테이너 스타일 */
+.intro {
+    display: flex;
+    flex-wrap: wrap; /* 여러 줄로 배치 */
+    justify-content: center; /* 가운데 정렬 */
+    gap: 20px; /* 아이템 간 간격 */
+}
+
+/* 인트로 옵션 스타일 */
+.intro-option {
+    background: white;
+    border-radius: 24px;
+    padding: 70px;
+    width: calc(20% - 20px); /* 한 줄에 두 개 배치, 여백 고려 */
+    box-sizing: border-box;
+    text-align: center; /* 텍스트 가운데 정렬 */
+    margin-bottom: 20px; /* 아래 여백 추가 */
+}
+
+/* 인트로 이미지 스타일 */
+.intro-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.intro-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 16px;
+    margin-bottom: 20px; /* 이미지와 텍스트 사이 여백 */
+}
+
+/* 인트로 서브타이틀 스타일 */
+.intro-subtitle {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Section styles */
+.section {
+    margin-top: 80px; /* 간격 조정 */
+}
+
+.section-content {
+    margin: 40px;
+}
+
+.section-title {
+    margin-top: 70px; /* 상단 여백 추가 */
+    font-size: 40px;
+    margin-bottom: 80px;
+    font-weight: bold;
+}
+
+.section-subtitle {
+    font-size: 28px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.image-gallery-horizontal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.image-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 1400px;
+    margin: 20px auto;
+    padding: 50px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background-color: #ffffff;
+    padding: 60px 0; /* 섹션 상하 여백 추가 */
+    border-radius: 5px;
+    opacity: 0; /* 애니메이션을 위한 초기값 */
+    animation: slideIn 2s forwards; /* 슬라이드인 애니메이션 */
+}
+
+@keyframes slideIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.image-item img {
+    max-width: 700px;
+    width: 100%;
+    height: auto;
+}
+
+.info-item {
+    flex: 1;
+    text-align: left; /* 텍스트 정렬을 왼쪽으로 변경 */
+    max-width: 600px; /* 텍스트 박스 크기 제한 */
+    margin-left: 20px; /* 텍스트와 이미지 간의 간격 조정 */
+}
+
+.info-title {
+    font-size: 32px; /* 글씨 크기 키움 */
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.info-subtitle {
+    font-size: 24px; /* 글씨 크기 키움 */
+    font-weight: bold;
+}
+
+.connect-title {
+    font-size: 37px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.connect-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Pricing Options */
+.pricing-options {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.pricing-option {
+    background: white;
+    border: 4px solid #2C74FF;
+    border-radius: 24px;
+    padding: 40px;
+    width: 300px; /* 너비 조정 */
+    text-align: left; /* 텍스트를 왼쪽 정렬 */
+    margin: 20px; /* 외부 여백 추가 */
+    position: relative; /* 절대 위치를 위한 상대 위치 */
+}
+
+.pricing-title {
+    font-size: 32px; /* 크기 조정 */
+    font-weight: bold; /* 볼드체 */
+    margin-bottom: 20px; /* 간격 조정 */
+    position: relative;
+}
+
+.pricing-recommend {
+    background: #C0D6FF;
+    color: #2C74FF;
+    font-size: 18px; /* 크기 조정 */
+    font-weight: bold; /* 볼드체 */
+    padding: 6px 12px;
+    border-radius: 12px;
+    display: inline-block;
+    position: absolute; /* 절대 위치로 설정 */
+    top: 20px; /* 상단에서 10px */
+    right: 20px; /* 오른쪽에서 10px */
+}
+
+.pricing-benefits {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+    font-size: 20px; /* 폰트 크기 증가 */
+    text-align: left; /* 왼쪽 정렬 */
+    margin-bottom: 30px; /* 간격 조정 */
+}
+
+.pricing-benefits li {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    font-size: 20px; /* 폰트 크기 증가 */
+    font-weight: bold;
+}
+
+.pricing-benefits li::before {
+    content: '✔';
+    color: #2C74FF;
+    margin-right: 20px;
+    font-size: 20px;
+}
+
+.pricing-button {
+    margin-top: 70px;
+    padding: 15px 30px; /* 크기 조정 */
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px; /* 크기 조정 */
+    font-weight: bold; /* 볼드체 */
+    text-align: center; /* 텍스트 가운데 정렬 */
+    display: block; /* 블록 요소로 설정하여 가운데 정렬 가능 */
+    margin: 0 auto; /* 가운데 정렬 */
+}
+
+.pricing-line {
+    width: 100%;
+    height: 1px;
+    background-color: #B9B9B9;
+    margin: 20px 0; /* 상하 여백 추가 */
+}
+
+/* 전체 페이지 스타일 */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    height: 100%;
+    width: 100%;
+}
+
+/* Footer content */
+.footer {
+    background-color: #E7EFFF;
+    padding: 40px; /* 패딩 조정 */
+    margin-top: 80px; /* 간격 조정 */
+    width: 100vw; /* 전체 뷰포트 너비로 설정 */
+    position: relative; /* 위치를 상대적으로 설정 */
+    left: 50%; /* 좌우 여백을 제거하기 위해 왼쪽 50% 설정 */
+    transform: translateX(-50%); /* 왼쪽으로 50% 이동하여 전체 너비를 차지 */
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.footer-title {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.footer-description {
+    font-size: 17px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.contact-container {
+    background-color: rgb(0, 0, 0);
+    padding: 40px;
+    border-radius: 24px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1400px; /* 기존 크레딧 컨테이너와 같은 폭 설정 */
+    width: 100%;
+    text-align: center;
+    margin: 20px auto; /* 컨테이너 간 여백 추가 */
+    box-sizing: border-box;
+}
+
+.contact-item {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 10px;
+    color: white;
+}
+
+.footers {
+    background-color: #000000;
+    padding: 40px; /* 패딩 조정 */
+    margin-bottom: 0; /* 좌우 여백 제거 */
+    margin-top: 80px; /* 간격 조정 */
+    height: flex;
+    width: 100vw; /* 전체 뷰포트 너비로 설정 */
+    position: relative; /* 위치를 상대적으로 설정 */
+    left: 50%; /* 좌우 여백을 제거하기 위해 왼쪽 50% 설정 */
+    transform: translateX(-50%); /* 왼쪽으로 50% 이동하여 전체 너비를 차지 */
+    box-sizing: border-box; /* 패딩과 테두리를 포함한 박스 크기 계산 */
+}
+
+.info-items {
+    color: white;
+    text-align: left;
+    font-weight: normal;
+    font-size: 12px;
+}
+
+.footer-copy {
+    color: white;
+    text-align: center;
+    font-weight: normal;
+    font-size: 12px;
+}
+
+.footer-line {
+    width: 100%; /* 가로선의 너비를 부모 요소의 100%로 설정 */
+    height: 0.5px; /* 가로선의 높이를 1px로 설정 */
+    background-color: #ffffff; /* 가로선의 배경색을 회색으로 설정 */
+    margin: 25px 0; /* 위아래 여백을 20px로 설정 */
+}
+
+
+/* 전체 여백과 정렬을 위한 스타일 */
+.benefit-container {
+    display: flex;
+    justify-content: center; /* 수평 가운데 정렬 */
+    gap: 40px; /* 컨테이너 간의 간격 */
+    padding: 20px; /* 전체 여백 */
+}
+
+/* 각 항목에 대한 스타일 */
+.benefit-item {
+    background: white;
+    border: 4px solid #2C74FF;
+    border-radius: 24px;
+    padding: 40px;
+    width: 400px; /* 각 항목의 너비 */
+    text-align: left; /* 텍스트 왼쪽 정렬 */
+    box-sizing: border-box; /* 패딩과 테두리를 포함한 박스 크기 계산 */
+    display: flex;
+    flex-direction: column; /* 수직 정렬 */
+}
+
+.benefit-item h2 {
+    font-size: 32px;
+    margin-bottom: 20px; /* 제목과 내용 간의 간격 */
+}
+
+.benefit-item p, .benefit-item ul {
+    margin-bottom: 20px; /* 텍스트 간의 간격 */
+    font-size: 20px;
+}
+
+.benefit-item p::before {
+    content: '✔';
+    color: #2C74FF;
+    margin-right: 10px; /* 리스트 아이템 아이콘과 텍스트 간의 간격 */
+}
+
+.benefit-item ul {
+    list-style: none; /* 기본 리스트 스타일 제거 */
+    padding: 0;
+}
+
+.benefit-item ul li {
+    font-size: 20px;
+    margin-bottom: 30px; /* 리스트 아이템 간의 간격 */
+}
+
+.benefit-item ul li::before {
+    content: '✔';
+    color: #2C74FF;
+    margin-right: 10px; /* 리스트 아이템 아이콘과 텍스트 간의 간격 */
+}
+
+/* 가로선 스타일 */
+.horizontal-line {
+    width: 100%;
+    height: 1px;
+    background-color: #B9B9B9;
+    margin: 48px 0 20px 0; /* 상단 여백 40px, 하단 여백 20px */
+}
+
+.horizontal-line-1 {
+    width: 100%;
+    height: 1px;
+    background-color: #B9B9B9;
+    margin: 10px 0 15px 0; /* 상단 여백 40px, 하단 여백 20px */
+}
+
+/* calculator */
+.calculator-container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 24px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1400px;  
+    width: 70%;
+    text-align: center;
+    margin: 20px auto;  
+    border: 4px solid #2C74FF;
+    box-sizing: border-box;
+}
+
+h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.slider-container {
+    margin: 20px 0;
+}
+
+#credit-slider {
+    width: 100%;
+}
+
+#credit-value {
+    font-size: 20px;
+    font-weight: bold;
+    color: #2C74FF;
+}
+
+.result-container {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* pricing-base */
+.parent-container {
+    display: flex;
+    justify-content: center; /* Horizontal center alignment */
+    gap: 20px; /* Gap between the boxes */
+}
+
+/* Box styles */
+.pricing-option {
+    background-color: white;
+    padding: 40px;
+    border-radius: 24px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px; /* 동일한 너비 설정 */
+    text-align: left; /* Align text to the left */
+    margin: 20px; /* 외부 여백 추가 */
+    position: relative; /* 절대 위치를 위한 상대 위치 */
+    border: 4px solid #2C74FF;
+    box-sizing: border-box;
+}
+
+.pricing-title {
+    font-size: 37px; /* 크기 조정 */
+    font-weight: bold; /* 볼드체 */
+    margin-bottom: 20px; /* 간격 조정 */
+    position: relative;
+}
+
+.pricing-description, .pricing-benefits {
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.pricing-benefits .pricing-benefit {
+    margin-bottom: 10px;
+}
+
+.pricing-benefits .pricing-benefit::before {
+    content: '✔';
+    color: #2C74FF;
+    margin-right: 10px;
+    font-size: 25px;
+}
+
+.pricing-line {
+    width: 100%; /* 가로선의 너비를 부모 요소의 100%로 설정 */
+    height: 1px; /* 가로선의 높이를 1px로 설정 */
+    background-color: #B9B9B9; /* 가로선의 배경색을 회색으로 설정 */
+    margin: 20px 0; /* 위아래 여백을 20px로 설정 */
+}
+
+/* 폼 컨테이너 스타일 설정 */
+.form-container {
+    padding: 40px;
+    border-radius: 24px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1400px; /* 기존 크레딧 컨테이너와 같은 폭 설정 */
+    width: 100%;
+    text-align: center;
+    margin: 30px auto; /* 컨테이너 간 여백 추가 */
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+textarea {
+    resize: none;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+/* 초기 상태에서는 애니메이션이 적용되지 않도록 opacity를 0으로 설정합니다. */
+.section-content, .intro-option, .image-item, .benefit-item, .pricing-option, .form-container {
+    opacity: 0;
+    transform: translateY(20px); /* 초기 상태에서 약간 아래로 이동 */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* 애니메이션이 활성화된 상태에서는 opacity를 1로 설정하고 원래 위치로 이동합니다. */
+.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
