@@ -1,5 +1,3 @@
-
-
 /* 기존 스타일 */
 body, html {
     margin: 0;
@@ -808,14 +806,6 @@ button:hover {
 }
 
 /* 지원가능 */
-
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f5f5f5;
-}
-
 .services-section {
     text-align: center;
     padding: 30px 20px;
@@ -859,6 +849,149 @@ body {
     border-radius: 12px;
     margin-bottom: 10px;
 }
+
+.service-logo p {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+    header nav {
+        gap: 20px;
+    }
+
+    header nav a {
+        font-size: 16px;
+    }
+
+    .text-overlay {
+        right: 10px;
+        padding: 20px;
+    }
+
+    .text-overlay .title {
+        font-size: 32px;
+    }
+
+    .text-overlay .subtitle {
+        font-size: 18px;
+    }
+
+    .text-overlay .button {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+
+    .intro-option {
+        width: calc(50% - 20px); /* 한 줄에 두 개 배치 */
+        padding: 40px;
+    }
+
+    .pricing-option {
+        width: calc(50% - 20px); /* 한 줄에 두 개 배치 */
+    }
+
+    .benefit-item {
+        width: calc(50% - 20px); /* 한 줄에 두 개 배치 */
+    }
+
+    .services-logos {
+        gap: 10px;
+    }
+
+    .service-logo {
+        width: 120px;
+        padding: 15px;
+    }
+
+    .service-logo p {
+        font-size: 14px;
+    }
+
+    .services-header h2 {
+        font-size: 24px;
+    }
+
+    .services-header p {
+        font-size: 16px;
+    }
+
+    .statistics-wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 30px 20px;
+    }
+
+    .statistics-item {
+        margin: 0;
+    }
+
+    .statistics-item .highlight {
+        font-size: 24px;
+    }
+
+    .statistics-item .description {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    .intro-option {
+        width: calc(100% - 40px); /* 한 줄에 한 개 배치 */
+        padding: 20px;
+    }
+
+    .pricing-option {
+        width: calc(100% - 40px); /* 한 줄에 한 개 배치 */
+    }
+
+    .benefit-item {
+        width: calc(100% - 40px); /* 한 줄에 한 개 배치 */
+    }
+
+    .services-logos {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .service-logo {
+        width: 80%;
+        padding: 10px;
+    }
+
+    .service-logo p {
+        font-size: 12px;
+    }
+
+    .services-header h2 {
+        font-size: 20px;
+    }
+
+    .services-header p {
+        font-size: 14px;
+    }
+
+    .statistics-wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        padding: 20px 10px;
+    }
+
+    .statistics-item .highlight {
+        font-size: 20px;
+    }
+
+    .statistics-item .description {
+        font-size: 14px;
+    }
+}
+
 
 .service-logo p {
     margin: 0;
