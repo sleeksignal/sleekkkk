@@ -724,3 +724,146 @@ button:hover {
     opacity: 1;
     transform: translateY(0);
 }
+
+
+
+
+/* 부모 컨테이너 스타일 */
+.why-wrapper {
+    display: flex;
+    flex-wrap: wrap; /* 줄바꿈 허용 */
+    justify-content: space-between; /* 여백 균일하게 배치 */
+    max-width: 1200px; /* 전체 너비 제한 */
+}
+
+/* why 스타일 */
+.why-container {
+    background: white;
+    border-radius: 24px;
+    padding: 70px;
+    width: calc(50% - 20px); /* 한 줄에 두 개 배치, 여백 고려 */
+    box-sizing: border-box;
+    text-align: center; /* 텍스트 가운데 정렬 */
+    margin-bottom: 20px; /* 아래 여백 추가 */
+}
+
+/* 인트로 이미지 스타일 */
+.why-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.why-image img {
+    max-width: 40%;
+    height: auto;
+    border-radius: 16px;
+    margin-bottom: 20px; /* 이미지와 텍스트 사이 여백 */
+}
+
+/* 인트로 서브타이틀 스타일 */
+.why-title {
+    font-size: 20px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.why-subtitle {
+    font-size: 37px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* 부모 컨테이너 스타일 */
+.statistics-wrapper {
+    display: flex;
+    justify-content: space-between; /* 공간을 균등하게 분배 */
+    align-items: center; /* 세로 중앙 정렬 */
+    background-color: #4285f4; /* 배경 색상 */
+    padding: 50px; /* 내부 여백 */
+    margin: 50px;
+    margin-bottom: 70px;
+  
+}
+
+/* 개별 항목 스타일 */
+.statistics-item {
+    text-align: center; /* 텍스트 가운데 정렬 */
+    flex: 1; /* 각 항목이 동일한 너비를 가짐 */
+    margin: 0 10px; /* 좌우 여백 */
+}
+
+/* 숫자 강조 스타일 */
+.statistics-item .highlight {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* 설명 텍스트 스타일 */
+.statistics-item .description {
+    font-size: 32px;
+    font-weight: normal;
+}
+
+/* 지원가능 */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.services-section {
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.services-header {
+    margin-bottom: 40px;
+}
+
+.services-header h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.services-header p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.5;
+}
+
+.services-logos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.service-logo {
+    background: white;
+    border-radius: 24px;
+    padding: 20px;
+    width: 150px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.service-logo img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    margin-bottom: 10px;
+}
+
+.service-logo p {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+}
+
