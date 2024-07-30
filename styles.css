@@ -857,58 +857,76 @@ button:hover {
     font-weight: bold;
 }
 
+logo p {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+    font-weight: bold;
+}
+
+
 /* 반응형 디자인 */
-@media (max-width: 768px) {
+@media (max-width: 390px) {
+    header {
+        padding: 10px 20px;
+    }
+
+    header .logo {
+        font-size: 18px;
+    }
+
     header nav {
-        gap: 20px;
+        flex-direction: column;
+        gap: 10px;
     }
 
     header nav a {
-        font-size: 16px;
+        font-size: 14px;
     }
 
     .text-overlay {
         right: 10px;
-        padding: 20px;
+        padding: 10px;
+        text-align: center;
+        width: calc(100% - 20px);
+        top: 40%;
+        transform: translateY(-40%);
     }
 
     .text-overlay .title {
-        font-size: 32px;
+        font-size: 24px;
     }
 
     .text-overlay .subtitle {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .text-overlay .button {
-        font-size: 16px;
-        padding: 8px 16px;
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+
+    .section-title {
+        font-size: 28px;
+    }
+
+    .section-subtitle {
+        font-size: 20px;
     }
 
     .intro-option {
-        width: calc(50% - 20px); /* 한 줄에 두 개 배치 */
-        padding: 40px;
+        width: calc(100% - 40px);
+        padding: 20px;
     }
 
     .pricing-option {
-        width: calc(50% - 20px); /* 한 줄에 두 개 배치 */
+        width: calc(100% - 40px);
+        padding: 20px;
     }
 
     .benefit-item {
-        width: calc(50% - 20px); /* 한 줄에 두 개 배치 */
-    }
-
-    .services-logos {
-        gap: 10px;
-    }
-
-    .service-logo {
-        width: 120px;
-        padding: 15px;
-    }
-
-    .service-logo p {
-        font-size: 14px;
+        width: calc(100% - 40px);
+        padding: 20px;
     }
 
     .services-header h2 {
@@ -916,47 +934,12 @@ button:hover {
     }
 
     .services-header p {
-        font-size: 16px;
-    }
-
-    .statistics-wrapper {
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-        padding: 30px 20px;
-    }
-
-    .statistics-item {
-        margin: 0;
-    }
-
-    .statistics-item .highlight {
-        font-size: 24px;
-    }
-
-    .statistics-item .description {
-        font-size: 18px;
-    }
-}
-
-@media (max-width: 480px) {
-    .intro-option {
-        width: calc(100% - 40px); /* 한 줄에 한 개 배치 */
-        padding: 20px;
-    }
-
-    .pricing-option {
-        width: calc(100% - 40px); /* 한 줄에 한 개 배치 */
-    }
-
-    .benefit-item {
-        width: calc(100% - 40px); /* 한 줄에 한 개 배치 */
+        font-size: 14px;
     }
 
     .services-logos {
         flex-direction: column;
         align-items: center;
-        gap: 10px;
     }
 
     .service-logo {
@@ -965,38 +948,71 @@ button:hover {
     }
 
     .service-logo p {
-        font-size: 12px;
-    }
-
-    .services-header h2 {
-        font-size: 20px;
-    }
-
-    .services-header p {
         font-size: 14px;
     }
 
     .statistics-wrapper {
         flex-direction: column;
         align-items: center;
-        gap: 10px;
-        padding: 20px 10px;
+        padding: 20px;
     }
 
     .statistics-item .highlight {
-        font-size: 20px;
+        font-size: 24px;
     }
 
     .statistics-item .description {
+        font-size: 16px;
+    }
+
+    .footer-title {
+        font-size: 24px;
+    }
+
+    .footer-description {
         font-size: 14px;
     }
+
+    .benefit-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .benefit-item h2 {
+        font-size: 24px;
+    }
+
+    .benefit-item p, .benefit-item ul li {
+        font-size: 14px;
+    }
+
+    .calculator-container {
+        width: calc(100% - 40px);
+        padding: 20px;
+    }
+
+    .form-container {
+        width: calc(100% - 40px);
+        padding: 20px;
+    }
+
+    h2, h3 {
+        font-size: 20px;
+    }
+
+    .form-group label {
+        font-size: 14px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
 }
-
-
-.service-logo p {
-    margin: 0;
-    font-size: 16px;
-    color: #333;
-    font-weight: bold;
-}
-
